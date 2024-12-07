@@ -2,12 +2,10 @@
 
 
 # Citation
+Please cite our paper if our work is helpful for your research.
 
-@article{gaht,
-  title={Hyperspectral image classification using group-aware hierarchical transformer},
-  author={Mei, Shaohui and Song, Chao and Ma, Mingyang and Xu, Fulin},
-  journal={IEEE Trans. Geosci. Remote Sens.},
-  year={2022},
-  volume={60},
-  pages={1-14},
-  doi={10.1109/TGRS.2022.3207933}}
+@Override
+protected void onDestroy() {
+    EventBus.getDefault().unregister(this);
+    super.onDestroy();
+}
