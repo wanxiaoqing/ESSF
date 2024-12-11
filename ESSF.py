@@ -167,7 +167,7 @@ class ESSF(nn.Module):
 
 
 if __name__ == '__main__':
-    model = DBCTNet(channels=1, num_classes=9)
+    model = ESSF(channels=1, num_classes=9)
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
     model.eval()
